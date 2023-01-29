@@ -45,16 +45,46 @@ header{
 
 .logo-png{
     height: 80px;
+
     
 }
+/*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
 nav{
     font-family: 'Khula', sans-serif;
     /* margin-right: 20px; */
-    height: 80px;
+    height: auto;
     width: 70%;
+    background-color: #112B3C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
+
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav button span{
+    color: #efefef;
+    width: 100%;
+    font-size: 30px;
+}
+.navbar-collapse{
+    background-color: #112b3c8f;
+}
+
+.nav-link{
+    color:#dcdcdf;
+    font-weight: bold;
+}
+
+
+
+/*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
 .nav__principal .nav__menu{
    
