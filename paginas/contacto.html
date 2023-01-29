@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../imagenes/logobg.png">
+</head>
+<body>
+    <header class="header-fixed">
+        <div class="header__logo">
+            <a href="../index.html"><img src="../imagenes/logo2.png" alt="web-logo" class="logo-png"></a>
+        </div>
+
+        <nav class="nav__principal">
+            <ul class="nav__menu">
+                <li class="menu-item" id="bio">
+                    <a href="../index.html">BIO</a>
+                </li>
+                <li class="menu-item" id="mi-portfolio">
+                    MI PORTFOLIO
+                    <ul class="menu-vertical">
+                        <li class="submenu-item"> <a href="audiovisual.html">AUDIOVISUAL</a></li>     
+                        <li class="submenu-item"> <a href="locucion.html">LOCUCIÓN</a></li>     
+                        <li class="submenu-item"> <a href="blog.html">BLOG</a></li>       
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="contacto.html">CONTÁCTAME</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main__contacto">
+            <div class="foto__contacto">
+                <h1 class="texto__contacto">FEDERICO TRANI</h1>
+            </div>
+
+        
+            <form action="">
+                <h2>CONTACTAME</h2>
+                <div class="formulario">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required placeholder="Ingrese su nombre">
+                    </div>
+                    
+                    <div>
+                        <label for="mail">Mail</label>
+                        <input type="mail" id="mail" required placeholder="Ingrese su mail">
+                        
+                    </div>
+                    <div>
+                        <label for="interes">Interés sobre:</label>
+                        <select name="interes" id="interes" required>
+                            <option value="Locucion">Locución</option>
+                            <option value="Audiovisual">Audiovisual</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                    <label for="mensaje">Mensaje</label>
+                        <textarea name="" id="mensaje" cols="30" rows="10" required placeholder="Escriba su mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="enviar">
+                    <input class="submit" type="submit" value="Enviar">
+                </div>
+            </form>
+
+    </main>
+    
+    <footer>
+        <div class="footer__portfolio">
+            <h4>PORTFOLIO</h4>
+            <a href="audiovisual.html">Audiovisual</a>
+            <a href="locucion.html">Locución</a>
+        </div>
+        <div class="footer__blog">
+            <h4>BLOG</h4>
+            <a href="https://federicotrani.wordpress.com/mi-tecno/" target="en_blank">Mi Tecno-Blog</a>
+        </div>
+        <div class="footer__rrss">
+            <h4>REDES SOCIALES</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/federico-trani/" target="en_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mi_tecno_/" target="en_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/MiTecno20" target="en_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://twitter.com/MiTecno" target="en_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.tiktok.com/@mi_tecno" target="en_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+
+        </div>
+        
+    </footer>
+
+
+    
+</body>
+</html>

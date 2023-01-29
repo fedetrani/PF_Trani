@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Darker+Grotesque&family=Khula:wght@300;400&family=Secular+One&family=Seymour+One&family=Work+Sans:wght@300;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #205375;
+}
+
+header{
+    height: 80px;
+    width:100%;
+    background-color: #112B3C;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.header-fixed{
+    height: 80px;
+    width:100%;
+    background-color: #112B3C;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.header__logo{
+    height: 80px;
+    width:20%;
+    margin-left: 10px;
+    
+}
+
+.logo-png{
+    height: 80px;
+    
+}
+
+nav{
+    font-family: 'Khula', sans-serif;
+    /* margin-right: 20px; */
+    height: 80px;
+    width: 70%;
+
+}
+
+.nav__principal .nav__menu{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px; /*es correcto esto? o como los centro?*/
+}
+
+
+.nav__menu .menu-item{
+    list-style: none;
+   
+    color: #efefef;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+} 
+
+li a{
+    text-decoration: none;
+    color:#efefef;
+}
+
+
+.menu-item a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.menu-item a:hover, .menu-item a:focus {
+    background-size: 100% 2px;
+    
+}
+
+.menu-vertical{
+    position:absolute;
+    display:none;
+    width:200px;
+    background-color: #112b3c63;
+    list-style: none;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    top:75px; /*es correcto hacer esto? o hay una mejor forma? no daña la estructura responsive?*/ /*como hacer para que no tenga que bajar rapido, porque sino se me va el efecto del hover (((le di menos top que el tamaño del header, pero no lo puedo arreglar con z-index para que no se veaque está por arriba)))*/
+ 
+}
+.submenu-item{
+    margin-top: 10px;
+}
+
+
+.nav__menu .menu-item:hover .menu-vertical{
+    display: block;
+} 
+
+
+.main__index{
+    height: 100vh;
+    width: 100%;
+    background-color: #205375;
+    background-image: url(../imagenes/fede_portada2.png);
+    background-size: cover;
+    background-position: right;
+    color:#efefef;
+    background-attachment: fixed;
+    
+
+}
+
+.presentacion{
+    position:absolute;
+    top:200px; 
+    margin-left: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 80px;
+    font-family:  'Work Sans', sans-serif;
+}
+
+.presentacion p{
+    font-size: 25px;
+    width: 450px;
+    font-family:'Secular One', sans-serif;
+    
+}
+
+.boton{
+    background-color: #f66b0e;
+    color: #efefef;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family:'Secular One', sans-serif; 
+    font-weight: 200;   
+}
+
+
+.boton:hover{
+    background-color: #205375;
+    border: 2px solid #112B3C;
+}
+.ver-mas{
+    height: auto;
+    width:100px;
+    margin-top: 30px;  
+}
+
+.div__cv{
+    height: 100vh;
+    width: 100%;
+    background-color: #205375;
+    background-image: url(../imagenes/fede_izquierdaA.png);
+    background-size: cover;
+    background-position: left;
+    color:#efefef;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+
+#box-cv{
+
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencia{
+    margin-right:5rem;
+    margin-top:2rem;
+}
+
+.texto-cv{
+    width:50%;
+    margin-right:5rem;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-family:'Secular One', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #efefef;
+    margin-left: 15px;
+}
+
+
+
+
+.blog{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.nav__secundario{
+    height: 60px;
+    width:100%;
+    top:90px;
+    background-image: linear-gradient(to right, #112b3c, #112b3c,#3b4a5b, #3b4a5b, #646d7b, #8d919c, #b7b8bf, #cacacf, #dcdcdf, #efefef, #efefef, #efefef, #efefef, #efefef);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Khula', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+
+    
+}
+.menu-secundario__ul{
+    width:50%;
+    padding:5px;
+    margin: 0 auto;
+}   /*♦♦♦♦♦CUIDADO CON ESTOO♦♦♦♦44♦♦♦♦44♦♦♦♦♦♦♦♦♦♦*/
+.nav__secundario-ul{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+color: #112b3c; /*por que este hace que mi menú secundario se ponga en azul en la pagina de "locucion", pero no en el menu secundario de "audiovisual"???????? {{{pero al ponerlo en ".nav__secundario-ul li a --> si se pone en azul, no entiendo qué hice mal}}}*/
+} 
+
+.nav__secundario-ul li{
+    list-style: none;
+    color: #112b3c;
+    
+}
+
+.nav__secundario-ul li a{
+    color:#112B3C;
+}
+
+
+
+h2{
+    background-color:#f66b0e;
+    color:#efefef;
+    padding:15px;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    
+
+}
+
+section{
+    width: auto;
+    height: auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    grid-column-gap: 0.63rem;
+    grid-row-gap:0.5rem;
+   
+}
+
+iframe{
+    /* width: 25rem;
+    height: 18.75rem; */
+    width:100%;
+    height: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+.main__contacto{
+    height: 100vh;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__contacto h1{
+    font-size: 5rem;
+}
+
+.foto__contacto{
+    background-color: #f66b0e;
+    width:50%;
+    height: 100vh;
+    background-image: url(../imagenes/fede_portada1A.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+
+.texto__contacto{
+    color: #efefef;
+    font-size: 80px;
+    font-family:  'Work Sans', sans-serif;
+    position: absolute;
+    top:150px;
+    width:20%;
+    margin-left: 15px;
+    text-align: center;
+      
+} 
+
+form{
+    width:50%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    padding-top:70px;
+   
+}
+.formulario{
+    padding-left: 30px;
+    padding-top:30px;
+}
+.formulario label{
+    display:block;
+} 
+
+.submit{
+    cursor:pointer;
+}
+
+label{
+    font-size: 20px;
+    font-family:'Work Sans', sans-serif;
+    color: #efefef;
+    font-weight: 500;
+}
+
+
+
+input, select{
+    width:50%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 3px solid #f66b0e;
+    border-radius: 15px 5px;
+
+}
+
+textarea{
+    width: 50%;
+    height: 168px;
+    font-size: 20px;
+    border: 3px solid #f66b0e;
+    border-radius: 15px 5px;
+}
+
+.submit{
+    background-color: #f66b0e;
+    color: #efefef;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 15px 5px;
+    font-family:'Secular One', sans-serif; 
+    font-weight: 200; 
+    height: auto; /*funciona asi??????*/
+    width: 120px;
+    margin-top: 10px;
+    position: relative;
+    right: -450px;
+    top:-48px;
+}
+
+
+footer{
+    background-color: #112B3C;
+    color:#efefef;
+    width:100%;
+    height: 105px;
+    font-family: 'Khula', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    
+}
+
+.footer__portfolio{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+   align-items: center;
+   margin-top: 5px;
+   
+  /* VER COMO HACER QUE NO DESBORDE pero le agrande a 105px el footer eso es correcto???*/
+}
+
+
+.footer__blog{
+text-align: center;
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+.footer__rrss{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    
+}
+.footer__rrss ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer a{
+    color: #efefef;
+    text-decoration: none;
+    padding: 3px;
+    
+}
+
+footer a:hover, footer li:hover{
+    color: #f66b0e;
+    scale: 1.1;
+
+}
+
+
+@media only screen and (max-width:890px){
+    
+    .nav__secundario{
+        height: auto;
+        width:100%;
+        top:80px;
+        background-image: linear-gradient(to right, #112b3c, #112b3c,#3b4a5b, #3b4a5b, #646d7b, #8d919c, #b7b8bf, #cacacf, #dcdcdf, #efefef, #efefef, #efefef, #efefef, #efefef);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Khula', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+    
+    }
+    .menu-secundario__ul{
+        width:50%;
+        padding:5px;
+        margin: 0 auto;
+    }   
+    .nav__secundario-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #112b3c; 
+    }
+
+    .nav__secundario-ul li{
+        list-style: none;
+        color: #112b3c;
+        
+    }
+
+
+    .nav__secundario-ul li a{
+        color:#112B3C;
+        font-size: 25px;
+    }
+    
+    .nav__secundario-ul li a:hover{
+        border-bottom: 2px solid #f66b0e;
+    }
+   
+    section{
+        width: auto;
+        height: auto; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        grid-column-gap: 0.63rem;
+        grid-row-gap:0.5rem;
+       
+    }
+     
+}
+
+
+@media only screen and (max-width:480px){
+    .nav__secundario{
+        display: none;
+    }
+
+    h2{
+        background-color:#f66b0e;
+        color:#efefef;
+        padding:15px;
+        margin-top:5px;
+        margin-bottom:5px;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.88rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    section{
+        width: 100%;
+        height: auto; 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        margin-left: 15px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        grid-column-gap: 0.63rem;
+        grid-row-gap:0.5rem;
+       
+    }
+
+    iframe{
+        width:30rem;
+        height: 15rem;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    
+
+}
