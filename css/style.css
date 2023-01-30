@@ -74,7 +74,7 @@ nav button span{
     font-size: 30px;
 }
 .navbar-collapse{
-    background-color: #112b3cb2;
+    background-color: #112b3cd0;
 }
 
 .nav-link{
@@ -111,67 +111,6 @@ ul .nav-item a{
 }
 
 /*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
-
-.nav__principal .nav__menu{
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px; /*es correcto esto? o como los centro?*/
-}
-
-
-.nav__menu .menu-item{
-    list-style: none;
-   
-    color: #efefef;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    
-} 
-
-li a{
-    text-decoration: none;
-    color:#efefef;
-}
-
-
-.menu-item a{
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.menu-item a:hover, .menu-item a:focus {
-    background-size: 100% 2px;
-    
-}
-
-.menu-vertical{
-    position:absolute;
-    display:none;
-    width:200px;
-    background-color: #112b3c63;
-    list-style: none;
-    padding-top:10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    top:75px; /*es correcto hacer esto? o hay una mejor forma? no daña la estructura responsive?*/ /*como hacer para que no tenga que bajar rapido, porque sino se me va el efecto del hover (((le di menos top que el tamaño del header, pero no lo puedo arreglar con z-index para que no se veaque está por arriba)))*/
- 
-}
-.submenu-item{
-    margin-top: 10px;
-}
-
-
-.nav__menu .menu-item:hover .menu-vertical{
-    display: block;
-} 
 
 
 .main__index{
@@ -299,12 +238,12 @@ h3{
     width:50%;
     padding:5px;
     margin: 0 auto;
-}   /*♦♦♦♦♦CUIDADO CON ESTOO♦♦♦♦44♦♦♦♦44♦♦♦♦♦♦♦♦♦♦*/
+} 
 .nav__secundario-ul{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-color: #112b3c; /*por que este hace que mi menú secundario se ponga en azul en la pagina de "locucion", pero no en el menu secundario de "audiovisual"???????? {{{pero al ponerlo en ".nav__secundario-ul li a --> si se pone en azul, no entiendo qué hice mal}}}*/
+color: #112b3c; 
 } 
 
 .nav__secundario-ul li{
@@ -332,7 +271,7 @@ h2{
 
 }
 
-section{
+ section{
     width: auto;
     height: auto; 
     display: grid;
@@ -354,6 +293,7 @@ iframe{
     margin-top: 15px;
     border-radius: 10px;
 }
+
 
 
 .main__contacto{
@@ -520,6 +460,25 @@ footer a:hover, footer li:hover{
 
 
 @media only screen and (max-width:890px){
+    .div__cv{
+        align-items: flex-end;
+    }
+    #box-cv{
+        background-color:#112b3c9c;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        height: fit-content;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experiencia a{
+        background-color: red;
+        text-align: center;
+    }
     
     .nav__secundario{
         height: auto;
@@ -550,6 +509,7 @@ footer a:hover, footer li:hover{
     .nav__secundario-ul li{
         list-style: none;
         color: #112b3c;
+        margin-bottom: 5px;
         
     }
 
@@ -557,10 +517,16 @@ footer a:hover, footer li:hover{
     .nav__secundario-ul li a{
         color:#112B3C;
         font-size: 25px;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
     }
     
     .nav__secundario-ul li a:hover{
-        border-bottom: 2px solid #f66b0e;
+        background-size: 100% 2px;
     }
    
     section{
@@ -650,7 +616,7 @@ footer div h4{
         width: 100%;
         height: auto; 
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat (2, 1fr);
         margin-left: 15px;
         margin-right: 5px;
@@ -660,12 +626,12 @@ footer div h4{
        
     }
 
+    
+
     iframe{
         width:30rem;
         height: 15rem;
         margin-top: 15px;
         border-radius: 10px;
     }
-    
-
 }

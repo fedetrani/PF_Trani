@@ -16,25 +16,39 @@
             <a href="../index.html"><img src="../imagenes/logo2.png" alt="web-logo" class="logo-png"></a>
         </div>
 
-        <nav class="nav__principal">
-            <ul class="nav__menu">
-                <li class="menu-item" id="bio">
-                    <a href="../index.html">BIO</a>
-                </li>
-                <li class="menu-item" id="mi-portfolio">
-                    MI PORTFOLIO
-                    <ul class="menu-vertical">
-                        <li class="submenu-item"> <a href="audiovisual.html">AUDIOVISUAL</a></li>     
-                        <li class="submenu-item"> <a href="locucion.html">LOCUCIÓN</a></li>     
-                        <li class="submenu-item"> <a href="blog.html">BLOG</a></li>       
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="contacto.html">CONTÁCTAME</a>
-                </li>
-            </ul>
-        </nav>
-        
+        <!-- INICIO: NAV BAR BOOTSTRAP RESPONSIVE -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">BIO <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-toggle="dropdown" aria-expanded="false">
+                        PORTFOLIO
+                        </a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="audiovisual.html">AUDIOVISUAL</a>
+                        <a class="dropdown-item" href="locucion.html">LOCUCIÓN</a>
+                        <a class="dropdown-item" href="blog.html">BLOG</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- FIN: NAV BAR BOOTSTRAP RESPONSIVE -->
+
     </header>
 
 
@@ -57,12 +71,15 @@
     <h2 id="comercial">LOCUCIÒN COMERCIAL</h2>
     <section class="locucion__section">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EJTjJk5Al0A?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lGNuKP66gjY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_x5TbtpTtzs?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EJTjJk5Al0A?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lGNuKP66gjY?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_x5TbtpTtzs?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 
 
     </section>
