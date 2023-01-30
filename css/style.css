@@ -74,7 +74,7 @@ nav button span{
     font-size: 30px;
 }
 .navbar-collapse{
-    background-color: #112b3c8f;
+    background-color: #112b3cb2;
 }
 
 .nav-link{
@@ -82,7 +82,33 @@ nav button span{
     font-weight: bold;
 }
 
+ul .nav-item{
+    padding-left: 10px;
+}
 
+
+ul .nav-item a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.nav-item a:hover, .nav-item a:focus {
+    background-size: 100% 2px;
+}
+
+.dropdown-menu {
+    background-color:  #112b3cb2;
+    border-radius: 10px;
+}
+
+.dropdown-menu a{
+    color:#efefef;
+    font-size: 20px;
+}
 
 /*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
