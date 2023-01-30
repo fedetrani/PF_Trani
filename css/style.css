@@ -476,7 +476,6 @@ footer{
    align-items: center;
    margin-top: 5px;
    
-  /* VER COMO HACER QUE NO DESBORDE pero le agrande a 105px el footer eso es correcto???*/
 }
 
 
@@ -497,6 +496,7 @@ margin-top: 5px;
 .footer__rrss ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 footer li{
@@ -509,7 +509,7 @@ footer a{
     color: #efefef;
     text-decoration: none;
     padding: 3px;
-    
+    transition: all 0.5s;
 }
 
 footer a:hover, footer li:hover{
@@ -579,6 +579,55 @@ footer a:hover, footer li:hover{
      
 }
 
+@media only screen and (max-width:576px){
+    .div__cv{
+        height: 100vh;
+        width: 100%;
+        background-color: #205375;
+        background-image: url(../imagenes/fede_izquierdaA.png);
+        background-size: cover;
+        background-position: left;
+        color:#efefef;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;  
+    } 
+    #box-cv{
+        background-color:#112b3c9c;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        height: fit-content;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experiencia a{
+        background-color: red;
+    }
+    
+    footer{
+        color:#efefef;
+        width:100%;
+        height: auto;
+        font-family: 'Khula', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;  
+    }
+footer div{
+    width: 100%;
+    margin-bottom: 0.93rem;
+}
+
+footer div h4{
+    margin-bottom: 0;
+}
+}
 
 @media only screen and (max-width:480px){
     .nav__secundario{
