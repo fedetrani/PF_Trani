@@ -135,13 +135,13 @@ ul .nav-item a{
 }
 
 h1{
-    font-size: 80px;
+    font-size: 5rem;
     font-family:  'Work Sans', sans-serif;
 }
 
 .presentacion p{
     font-size: 25px;
-    width: 450px;
+    width: auto;
     font-family:'Secular One', sans-serif;
     
 }
@@ -598,6 +598,28 @@ footer a:hover, footer li:hover{
 }
 
 @media only screen and (max-width:576px){
+    .main__index{
+        width:auto;
+    }
+    .main__index{
+        background-image: url(../imagenes/fede_portada2_responsive.png);
+        background-position: center;
+    }
+
+    .presentacion{
+        width:500px;
+        height: auto;
+        background-color: #112b3cbd;
+        border-radius: 10px;
+        top:90px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .presentacion h1{
+        font-size: 4rem;
+    }
+
     .div__cv{
         height: 100vh;
         width: 100%;
@@ -646,6 +668,21 @@ footer div h4{
 @media only screen and (max-width:480px){
     .header__logo{
         width: 50%;
+    }
+    .main__index{
+        width:auto;
+    }
+    .presentacion{
+        width:380px;
+        background-color: #112b3cbd;
+        border-radius: 10px;
+        top:90px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion h1{
+        font-size: 3rem;
     }
 
 
