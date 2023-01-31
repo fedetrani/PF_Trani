@@ -208,6 +208,7 @@ h3{
     font-weight: 100;
     color: #efefef;
     margin-left: 15px;
+   
 }
 
 
@@ -249,13 +250,19 @@ color: #112b3c;
 .nav__secundario-ul li{
     list-style: none;
     color: #112b3c;
+    margin-top:5px;
+    
     
 }
 
 .nav__secundario-ul li a{
     color:#112B3C;
+
 }
 
+.nav__secundario h3{
+    margin-top:10px;
+}
 
 
 h2{
@@ -272,7 +279,7 @@ h2{
 }
 
  section{
-    width: auto;
+    
     height: auto; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -286,10 +293,9 @@ h2{
 }
 
 iframe{
-    /* width: 25rem;
-    height: 18.75rem; */
-    width:100%;
-    height: 100%;
+   
+    width:98%;
+    height: 250px;
     margin-top: 15px;
     border-radius: 10px;
 }
@@ -454,11 +460,13 @@ footer a:hover, footer li:hover{
     .div__cv{
         align-items: flex-end;
     }
+
     #box-cv{
         background-color:#112b3c9c;
         border-radius: 20px;
         margin-bottom: 1rem;
-        height: fit-content;
+        /* height: fit-content; */
+        height: 350px;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -466,10 +474,7 @@ footer a:hover, footer li:hover{
         justify-content: center;
     }
 
-    .experiencia a{
-        background-color: red;
-        text-align: center;
-    }
+   
     
     .nav__secundario{
         height: auto;
@@ -520,8 +525,12 @@ footer a:hover, footer li:hover{
         background-size: 100% 2px;
     }
    
+    .nav__secundario h3{
+        background-color: #112b3cc4;
+        margin-top: 0;
+    }
     section{
-        width: auto;
+    
         height: auto; 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -534,11 +543,16 @@ footer a:hover, footer li:hover{
        
     }
 
+    iframe{
+        width:98%;
+    }
+
     .main__contacto{
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        
     }
 
     form{
@@ -546,6 +560,11 @@ footer a:hover, footer li:hover{
 
         
     }
+
+    .form{
+        top:0px;
+    }
+    
     .submit{
         background-color: red;
         margin-top: 20px;
@@ -569,7 +588,7 @@ footer a:hover, footer li:hover{
         background-color:#112b3c9c;
         border-radius: 20px;
         margin-bottom: 1rem;
-        height: fit-content;
+        /* height: fit-content; */
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -577,9 +596,6 @@ footer a:hover, footer li:hover{
         justify-content: center;
     }
 
-    .experiencia a{
-        background-color: red;
-    }
     
     footer{
         color:#efefef;
@@ -603,6 +619,12 @@ footer div h4{
 }
 
 @media only screen and (max-width:480px){
+    .header__logo{
+        width: 50%;
+    }
+
+
+
     .nav__secundario{
         display: none;
     }
@@ -620,7 +642,7 @@ footer div h4{
     }
 
     section{
-        width: 100%;
+
         height: auto; 
         display: grid;
         grid-template-columns: 1fr;
@@ -634,9 +656,8 @@ footer div h4{
     }
 
     
-
     iframe{
-        width:30rem;
+        width:98%;
         height: 15rem;
         margin-top: 15px;
         border-radius: 10px;
