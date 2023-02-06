@@ -1,10 +1,12 @@
+
+@import "_estetica";
 /*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
 nav{
     font-family: 'Khula', sans-serif;
     height: auto;
     width: 70%;
-    background-color: #112B3C;
+    background-color: $colorPrincipal;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,7 +29,7 @@ nav button span{
 }
 
 .nav-link{
-    color:#dcdcdf;
+    color:$colorCuarto;
     font-weight: bold;
 }
 
@@ -48,7 +50,7 @@ ul .nav-item{
 
 .nav-item a:hover, .nav-item a:focus {
     background-size: 100% 2px;
-    color: #f66b0e;
+    color: $colorTerciario;
 }
 
 .dropdown-menu {
@@ -56,14 +58,14 @@ ul .nav-item{
     border-radius: 10px;
 
     a{
-        color:#efefef;
+        color:$colorCuarto;
         font-size: 20px;
         background-color: transparent !important;
     }
 
     a:hover{
-        background-color: #205375 !important;
-        color: #f66b0e;
+        background-color: $colorSecundario !important;
+        color: $colorTerciario;
     }
 
 }

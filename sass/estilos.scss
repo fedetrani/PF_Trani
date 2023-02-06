@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Darker+Grotesque&family=Khula:wght@300;400&family=Secular+One&family=Seymour+One&family=Work+Sans:wght@300;500&display=swap');
 
+@import "_estetica";
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-   
 }
 
 html{
@@ -12,13 +13,13 @@ html{
 }
 
 body{
-    background-color: #205375;
+    background-color: $colorSecundario;
 }
 
 header{
     height: 80px;
     width:100%;
-    background-color: #112B3C;
+    background-color: $colorPrincipal;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -28,7 +29,7 @@ header{
 .header-fixed{
     height: 80px;
     width:100%;
-    background-color: #112B3C;
+    background-color: $colorPrincipal;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -57,11 +58,11 @@ header{
 .main__index{
     height: 100vh;
     width: 100%;
-    background-color: #205375;
+    background-color: $colorSecundario;
     background-image: url(../imagenes/fede_portada2.png);
     background-size: cover;
     background-position: right;
-    color:#efefef;
+    color: $colorCuarto;
     background-attachment: fixed;
     
 
@@ -89,8 +90,8 @@ h1{
 }
 
 .boton{
-    background-color: #f66b0e;
-    color: #efefef;
+    background-color: $colorTerciario;
+    color: $colorCuarto;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
@@ -101,8 +102,9 @@ h1{
 
 
 .boton:hover{
-    background-color: #205375;
-    border: 2px solid #112B3C;
+    background-color: $colorSecundario;
+    border: 2px solid $colorPrincipal;
+    color: $colorCuarto;
 }
 .ver-mas{
     height: auto;
@@ -113,11 +115,11 @@ h1{
 .div__cv{
     height: 100vh;
     width: 100%;
-    background-color: #205375;
+    background-color: $colorSecundario;
     background-image: url(../imagenes/fede_izquierdaA.png);
     background-size: cover;
     background-position: left;
-    color:#efefef;
+    color: $colorCuarto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -147,10 +149,8 @@ h3{
     font-family:'Secular One', sans-serif;
     letter-spacing: 1px;
     font-weight: 100;
-    color: #efefef;
+    color: $colorCuarto;
     margin-left: 15px;
-    
-   
 }
 
 
@@ -168,18 +168,18 @@ h3{
 }
 
 article{
-    background-color: #efefef;
+    background-color: $colorCuarto;
     margin-bottom: 2rem;;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 2px solid #112B3C;
+    border: 2px solid $colorPrincipal;
 
     
 }
 
 .articulo__titulo{
-    background-color: #f66b0e;
+    background-color: $colorTerciario;
     font-size: 2rem;
     
 }
@@ -214,19 +214,19 @@ article{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-color: #112b3c; 
+color: $colorPrincipal; 
 } 
 
 .nav__secundario-ul li{
     list-style: none;
-    color: #112b3c;
+    color: $colorPrincipal;
     margin-top:5px;
     
     
 }
 
 .nav__secundario-ul li a{
-    color:#112B3C;
+    color: $colorPrincipal;
 
 }
 
@@ -236,8 +236,8 @@ color: #112b3c;
 
 
 h2{
-    background-color:#f66b0e;
-    color:#efefef;
+    background-color: $colorTerciario;
+    color: $colorCuarto;
     padding:15px;
     margin-top:10px;
     margin-bottom:5px;
@@ -248,7 +248,7 @@ h2{
 
 }
 
- section{
+section{
     
     height: auto; 
     display: grid;
@@ -259,11 +259,9 @@ h2{
     margin-bottom: 20px;
     grid-column-gap: 0.63rem;
     grid-row-gap:0.5rem;
-   
 }
 
 iframe{
-   
     width:98%;
     height: 250px;
     margin-top: 15px;
@@ -279,7 +277,7 @@ iframe{
 }
 
 .foto__contacto{
-    background-color: #f66b0e;
+    background-color: $colorTerciario;
     background-image: url(../imagenes/fede_portada1A.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -290,7 +288,7 @@ iframe{
 }
 
 .foto__contacto h1{
-    color: #efefef;
+    color: $colorCuarto;
     font-size: 5rem;
     margin-top:200px; 
     background-color: #112b3cb6;
@@ -314,7 +312,7 @@ form{
 label{
     font-size: 20px;
     font-family:'Work Sans', sans-serif;
-    color: #efefef;
+    color: $colorCuarto;
     font-weight: 500;
 }
 
@@ -322,7 +320,7 @@ input, select{
     width:50%;
     margin-bottom: 20px;
     font-size: 20px;
-    border: 3px solid #f66b0e;
+    border: 3px solid $colorTerciario;
     border-radius: 15px 5px;
 
 }
@@ -335,7 +333,7 @@ textarea{
     width: 50%;
     height: 100px;
     font-size: 20px;
-    border: 3px solid #f66b0e;
+    border: 3px solid $colorTerciario;
     border-radius: 15px 5px;
 }
 
@@ -343,8 +341,8 @@ textarea{
     margin-top: 0.2rem;
 }
 .submit{
-    background-color: #f66b0e;
-    color: #efefef;
+    background-color: $colorTerciario;
+    color: $colorCuarto;
     font-weight: bold;
     text-decoration: none;
     padding: 5px 7px;

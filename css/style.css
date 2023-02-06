@@ -72,7 +72,7 @@ nav button span {
 }
 
 .nav-link {
-  color: #dcdcdf;
+  color: #efefef;
   font-weight: bold;
 }
 
@@ -153,6 +153,7 @@ h1 {
 .boton:hover {
   background-color: #205375;
   border: 2px solid #112B3C;
+  color: #efefef;
 }
 
 .ver-mas {
@@ -254,12 +255,12 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #112b3c;
+  color: #112B3C;
 }
 
 .nav__secundario-ul li {
   list-style: none;
-  color: #112b3c;
+  color: #112B3C;
   margin-top: 5px;
 }
 
