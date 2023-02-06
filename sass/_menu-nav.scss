@@ -1,0 +1,71 @@
+/*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
+
+nav{
+    font-family: 'Khula', sans-serif;
+    height: auto;
+    width: 70%;
+    background-color: #112B3C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navbar-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+nav button span{
+    color: #efefef;
+    width: 100%;
+    font-size: 30px;
+}
+.navbar-collapse{
+    background-color: #112b3cd0;
+}
+
+.nav-link{
+    color:#dcdcdf;
+    font-weight: bold;
+}
+
+ul .nav-item{
+    padding-left: 10px;
+
+    a{
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+}
+
+
+
+.nav-item a:hover, .nav-item a:focus {
+    background-size: 100% 2px;
+    color: #f66b0e;
+}
+
+.dropdown-menu {
+    background-color:  #112b3cb2;
+    border-radius: 10px;
+
+    a{
+        color:#efefef;
+        font-size: 20px;
+        background-color: transparent !important;
+    }
+
+    a:hover{
+        background-color: #205375 !important;
+        color: #f66b0e;
+    }
+
+}
+
+/*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/

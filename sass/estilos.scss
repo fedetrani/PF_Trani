@@ -48,68 +48,10 @@ header{
 
     
 }
-/*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
-nav{
-    font-family: 'Khula', sans-serif;
-    height: auto;
-    width: 70%;
-    background-color: #112B3C;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*insertar menu-nav*/
+@import "_menu-nav";
 
-}
-
-.navbar-nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-nav button span{
-    color: #efefef;
-    width: 100%;
-    font-size: 30px;
-}
-.navbar-collapse{
-    background-color: #112b3cd0;
-}
-
-.nav-link{
-    color:#dcdcdf;
-    font-weight: bold;
-}
-
-ul .nav-item{
-    padding-left: 10px;
-}
-
-
-ul .nav-item a{
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.nav-item a:hover, .nav-item a:focus {
-    background-size: 100% 2px;
-}
-
-.dropdown-menu {
-    background-color:  #112b3cb2;
-    border-radius: 10px;
-}
-
-.dropdown-menu a{
-    color:#efefef;
-    font-size: 20px;
-}
-
-/*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
 
 .main__index{

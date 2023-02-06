@@ -45,6 +45,7 @@ header {
   height: 80px;
 }
 
+/*insertar menu-nav*/
 /*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 nav {
   font-family: "Khula", sans-serif;
@@ -55,8 +56,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.navbar-nav {
+nav .navbar-nav {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -80,7 +80,6 @@ nav button span {
 ul .nav-item {
   padding-left: 10px;
 }
-
 ul .nav-item a {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
@@ -92,16 +91,21 @@ ul .nav-item a {
 
 .nav-item a:hover, .nav-item a:focus {
   background-size: 100% 2px;
+  color: #f66b0e;
 }
 
 .dropdown-menu {
   background-color: rgba(17, 43, 60, 0.6980392157);
   border-radius: 10px;
 }
-
 .dropdown-menu a {
   color: #efefef;
   font-size: 20px;
+  background-color: transparent !important;
+}
+.dropdown-menu a:hover {
+  background-color: #205375 !important;
+  color: #f66b0e;
 }
 
 /*FINALIZACIÓN EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
