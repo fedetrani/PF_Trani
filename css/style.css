@@ -45,7 +45,6 @@ header {
   height: 80px;
 }
 
-/*insertar menu-nav*/
 /*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 nav {
   font-family: "Khula", sans-serif;
@@ -403,8 +402,7 @@ footer {
   padding-left: 20px;
   font-size: 18px;
 }
-
-.footer__portfolio {
+footer .footer__portfolio {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -412,33 +410,28 @@ footer {
   align-items: center;
   margin-top: 5px;
 }
-
-.footer__blog {
+footer .footer__blog {
   text-align: center;
   display: flex;
   flex-direction: column;
   margin-top: 5px;
 }
-
-.footer__rrss {
+footer .footer__rrss {
   text-align: center;
   display: flex;
   flex-direction: column;
   margin-top: 5px;
 }
-
-.footer__rrss ul {
+footer .footer__rrss ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 footer li {
   list-style: none;
   display: inline-block;
   padding: 10px;
 }
-
 footer a {
   color: #efefef;
   text-decoration: none;
