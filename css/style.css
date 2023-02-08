@@ -206,12 +206,29 @@ h3 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  /* position:relative;
-  top:110px; */
-  /* ARREGLAR BLOG PARA LA ENTREGA FINAL*/
+}
+.blog .dropdown {
+  background-color: rgba(239, 239, 239, 0.7176470588);
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0px 20px 0px;
+  border-radius: 15px;
+  padding-top: 15px;
+  border: 2px solid #f66b0e;
+}
+.blog .dropdown label {
+  color: #112B3C;
+  text-transform: uppercase;
+}
+.blog .dropdown select {
+  background-color: rgba(32, 83, 117, 0.5803921569);
 }
 
-article {
+.noticias {
+  display: flex;
+  flex-direction: column;
+}
+.noticias article {
   background-color: #efefef;
   margin-bottom: 2rem;
   display: flex;
@@ -219,15 +236,31 @@ article {
   border-radius: 10px;
   border: 2px solid #112B3C;
 }
-
-.articulo__titulo {
-  background-color: #f66b0e;
-  font-size: 2rem;
+.noticias article h4 {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10px;
 }
-
-.articulo__foto {
-  width: 30px;
-  height: 100%;
+.noticias article p {
+  text-align: justify;
+  padding: 0 10px 0 10px;
+  font-size: 18px;
+}
+.noticias article a {
+  background-color: #112B3C;
+  color: #efefef;
+  font-weight: bold;
+  margin: 0 auto 10px;
+  width: 5rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  border: 3px solid #f66b0e;
+  transition: background-color 0.3s;
+}
+.noticias article a:hover {
+  background-color: #205375;
+  text-decoration: none;
 }
 
 .nav__secundario {

@@ -153,38 +153,88 @@ h3{
 }
 
 
+
 .blog{
     width:90%;
     height:auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* position:relative;
-    top:110px; */
-    /* ARREGLAR BLOG PARA LA ENTREGA FINAL*/
+
+    .dropdown{
+        background-color: #efefefb7;
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0px 20px 0px;
+        border-radius: 15px;
+        padding-top: 15px;
+        border: 2px solid $colorTerciario;
+
+        label{
+            color: $colorPrincipal;
+            text-transform: uppercase;
+        }
+
+        select{
+            background-color: #20537594;
+        }
+    }
 }
 
-article{
-    background-color: $colorCuarto;
-    margin-bottom: 2rem;;
+
+.noticias{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    border: 2px solid $colorPrincipal;
 
-    
+    // .hardware{
+        
+    //     @if select == software{
+    //         display: none;
+    //     }
+    // }
+
+    article{
+        background-color: $colorCuarto;
+        margin-bottom: 2rem;;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 2px solid $colorPrincipal;
+        
+        h4{
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+        p{
+            text-align: justify;
+            padding: 0 10px 0 10px;
+            font-size: 18px;
+        }
+
+        a{
+            background-color: $colorPrincipal;
+            color: $colorCuarto;
+            font-weight: bold;
+            margin: 0 auto 10px;
+            width: 5rem;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            border: 3px solid $colorTerciario;
+            transition: background-color .3s;
+        }
+
+        a:hover{
+            background-color: $colorSecundario;
+            text-decoration: none;
+        }
+    }
+
 }
 
-.articulo__titulo{
-    background-color: $colorTerciario;
-    font-size: 2rem;
-    
-}
 
-.articulo__foto{
-    width:30px;
-    height: 100%;
-}
 
 
 .nav__secundario{
