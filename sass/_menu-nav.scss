@@ -1,9 +1,10 @@
 
 @import "_estetica";
+
 /*COMIENZO EDICIÓN DEL NAVBAR DE BOOTSTRAP*/
 
 nav{
-    font-family: 'Khula', sans-serif;
+    font-family: $fuente2;
     height: auto;
     width: 70%;
     background-color: $colorPrincipal;
