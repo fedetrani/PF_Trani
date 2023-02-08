@@ -36,32 +36,31 @@
         margin: 0 auto;
     }   
     .nav__secundario-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    color: #112b3c; 
-    }
-
-    .nav__secundario-ul li{
-        list-style: none;
-        color: #112b3c;
-        margin-bottom: 5px;
-        
-    }
-
-
-    .nav__secundario-ul li a{
-        color:#112B3C;
-        font-size: 25px;
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        color: #112b3c; 
     
+        li{
+            list-style: none;
+            color: #112b3c;
+            margin-bottom: 5px;
+
+            a{
+                color:#112B3C;
+                font-size: 25px;
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+            }
+            
+        }
+    }
+
     .nav__secundario-ul li a:hover{
         background-size: 100% 2px;
     }
@@ -127,11 +126,12 @@
         top:90px;
         align-items: center;
         padding: 10px;
+
+        h1{
+            font-size: 4rem;
+        }
     }
 
-    .presentacion h1{
-        font-size: 4rem;
-    }
 
     .div__cv{
         height: 100vh;
@@ -166,15 +166,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 18px;  
-    }
-    footer div{
-        width: 100%;
-        margin-bottom: 0.93rem;
-    }
-
-    footer div h4{
-        margin-bottom: 0;
+        font-size: 18px;
+        
+        div{
+            width: 100%;
+            margin-bottom: 0.93rem;
+            h4{
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -192,12 +192,10 @@
         top:90px;
         align-items: center;
         text-align: center;
+        h1{
+            font-size: 3rem;
+        }
     }
-
-    .presentacion h1{
-        font-size: 3rem;
-    }
-
 
 
     .nav__secundario{

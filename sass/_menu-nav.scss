@@ -18,13 +18,13 @@ nav{
         justify-content: space-around;
     }
 
+    button span{
+        color: #efefef;
+        width: 100%;
+        font-size: 30px;
+    }
 }
 
-nav button span{
-    color: #efefef;
-    width: 100%;
-    font-size: 30px;
-}
 .navbar-collapse{
     background-color: #112b3cd0;
 }

@@ -24,35 +24,33 @@ header{
     justify-content: space-between;
     font-size: 20px;
     z-index: 10;
+
+    .header-fixed{
+        height: 80px;
+        width:100%;
+        background-color: $colorPrincipal;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        z-index: 10;
+
+        .header__logo{
+            height: 80px;
+            width:20%;
+            margin-left: 10px;
+            
+        }
+    }
 }
 
-.header-fixed{
-    height: 80px;
-    width:100%;
-    background-color: $colorPrincipal;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    z-index: 10;
-}
-
-.header__logo{
-    height: 80px;
-    width:20%;
-    margin-left: 10px;
-    
-}
 
 .logo-png{
     height: 80px;
-
-    
 }
 
 
 @import "_menu-nav";
-
 
 
 .main__index{
@@ -64,30 +62,31 @@ header{
     background-position: right;
     color: $colorCuarto;
     background-attachment: fixed;
-    
 
+    .presentacion{
+        position:absolute;
+        top:200px; 
+        margin-left: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            font-size: 25px;
+            width: auto;
+            font-family: $fuente3;
+            
+        }
+    }    
 }
 
-.presentacion{
-    position:absolute;
-    top:200px; 
-    margin-left: 20px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
+
 
 h1{
     font-size: 5rem;
     font-family:  $fuente5;
 }
 
-.presentacion p{
-    font-size: 25px;
-    width: auto;
-    font-family: $fuente3;
-    
-}
 
 .boton{
     background-color: $colorTerciario;
@@ -154,8 +153,6 @@ h3{
 }
 
 
-
-
 .blog{
     width:90%;
     height:auto;
@@ -190,7 +187,6 @@ article{
 }
 
 
-
 .nav__secundario{
     height: 60px;
     width:100%;
@@ -202,8 +198,10 @@ article{
     font-family: $fuente2;
     font-size: 20px;
     font-weight: 800;
-
     
+    h3{
+        margin-top:10px;
+    }
 }
 .menu-secundario__ul{
     width:50%;
@@ -222,16 +220,9 @@ color: $colorPrincipal;
     color: $colorPrincipal;
     margin-top:5px;
     
-    
-}
-
-.nav__secundario-ul li a{
-    color: $colorPrincipal;
-
-}
-
-.nav__secundario h3{
-    margin-top:10px;
+    a{
+        color: $colorPrincipal;
+    }    
 }
 
 
@@ -285,21 +276,27 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h1{
+        color: $colorCuarto;
+        font-size: 5rem;
+        margin-top:200px; 
+        background-color: #112b3cb6;
+        border-radius: 20px;
+    }
 }
 
-.foto__contacto h1{
-    color: $colorCuarto;
-    font-size: 5rem;
-    margin-top:200px; 
-    background-color: #112b3cb6;
-    border-radius: 20px;
-}
 
 .form{
     display:flex;
     flex-direction: column;
     position: relative;
     top:70px;
+
+    h2{
+        font-weight: bold;
+        box-shadow: 10px 10px 14px 1px rgba(0,0,0,0.47);
+    }
 }
 
 form{
@@ -351,11 +348,6 @@ textarea{
     font-weight: 200; 
     height: auto;
     width: 120px;
-}
-
-.form h2{
-    font-weight: bold;
-    box-shadow: 10px 10px 14px 1px rgba(0,0,0,0.47);
 }
 
 
