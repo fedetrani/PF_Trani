@@ -78,6 +78,7 @@ nav button span {
 
 ul .nav-item {
   padding-left: 10px;
+  z-index: 100;
 }
 ul .nav-item a {
   text-decoration: none;
@@ -126,15 +127,15 @@ ul .nav-item a {
   display: flex;
   flex-direction: column;
 }
+.main__index .presentacion h1 {
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  z-index: 10;
+}
 .main__index .presentacion p {
   font-size: 25px;
   width: auto;
   font-family: "Secular One", sans-serif;
-}
-
-h1 {
-  font-size: 5rem;
-  font-family: "Work Sans", sans-serif;
 }
 
 .boton {
@@ -349,8 +350,9 @@ iframe {
   align-items: center;
 }
 .foto__contacto h1 {
-  color: #efefef;
   font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  color: #efefef;
   margin-top: 200px;
   background-color: rgba(17, 43, 60, 0.7137254902);
   border-radius: 20px;
@@ -566,8 +568,6 @@ footer a:hover, footer li:hover {
 @media only screen and (max-width: 576px) {
   .main__index {
     width: auto;
-  }
-  .main__index {
     background-image: url(../imagenes/fede_portada2_responsive.png);
     background-position: center;
   }
@@ -577,6 +577,7 @@ footer a:hover, footer li:hover {
     background-color: rgba(17, 43, 60, 0.7411764706);
     border-radius: 10px;
     top: 90px;
+    margin-top: 330px;
     align-items: center;
     padding: 10px;
   }
@@ -638,6 +639,7 @@ footer a:hover, footer li:hover {
     top: 90px;
     align-items: center;
     text-align: center;
+    margin-top: 330px;
   }
   .presentacion h1 {
     font-size: 3rem;
