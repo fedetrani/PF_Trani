@@ -208,26 +208,11 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.blog .dropdown {
-  background-color: rgba(239, 239, 239, 0.7176470588);
-  display: flex;
-  justify-content: space-around;
-  margin: 15px 0px 20px 0px;
-  border-radius: 15px;
-  padding-top: 15px;
-  border: 2px solid #f66b0e;
-}
-.blog .dropdown label {
-  color: #112B3C;
-  text-transform: uppercase;
-}
-.blog .dropdown select {
-  background-color: rgba(32, 83, 117, 0.5803921569);
-}
 
 .noticias {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 .noticias article {
   background-color: #efefef;
@@ -639,7 +624,7 @@ footer a:hover, footer li:hover {
     top: 90px;
     align-items: center;
     text-align: center;
-    margin-top: 330px;
+    margin-top: 280px;
   }
   .presentacion h1 {
     font-size: 3rem;

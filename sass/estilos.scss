@@ -85,14 +85,6 @@ header{
     }    
 }
 
-
-
-// h1{
-//     font-size: 5rem;
-//     font-family:  $fuente5;
-// }
-
-
 .boton{
     background-color: $colorTerciario;
     color: $colorCuarto;
@@ -165,38 +157,13 @@ h3{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-    .dropdown{
-        background-color: #efefefb7;
-        display: flex;
-        justify-content: space-around;
-        margin: 15px 0px 20px 0px;
-        border-radius: 15px;
-        padding-top: 15px;
-        border: 2px solid $colorTerciario;
-
-        label{
-            color: $colorPrincipal;
-            text-transform: uppercase;
-        }
-
-        select{
-            background-color: #20537594;
-        }
-    }
 }
 
 
 .noticias{
     display: flex;
     flex-direction: column;
-
-    // .hardware{
-        
-    //     @if select == software{
-    //         display: none;
-    //     }
-    // }
+    margin-top: 1rem;
 
     article{
         background-color: $colorCuarto;
@@ -264,10 +231,10 @@ h3{
     margin: 0 auto;
 } 
 .nav__secundario-ul{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-color: $colorPrincipal; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $colorPrincipal; 
 } 
 
 .nav__secundario-ul li{
