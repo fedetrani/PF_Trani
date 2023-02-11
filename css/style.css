@@ -363,7 +363,6 @@ iframe {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 70px;
 }
 .form h2 {
   font-weight: bold;
