@@ -204,7 +204,15 @@ h3{
         }
     }
 
+    @for $incremento-color from 1 through 4{
+        .not-#{$incremento-color}:hover{
+            background-color: lighten($colorPrincipal, $incremento-color*10%);
+            transition: all .5s;
+        }
+    }
 }
+
+
 
 
 

@@ -248,6 +248,22 @@ h3 {
   background-color: #205375;
   text-decoration: none;
 }
+.noticias .not-1:hover {
+  background-color: #1c4764;
+  transition: all 0.5s;
+}
+.noticias .not-2:hover {
+  background-color: #28648b;
+  transition: all 0.5s;
+}
+.noticias .not-3:hover {
+  background-color: #3380b3;
+  transition: all 0.5s;
+}
+.noticias .not-4:hover {
+  background-color: #4d9acc;
+  transition: all 0.5s;
+}
 
 .nav__secundario {
   height: 60px;
