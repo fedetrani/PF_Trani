@@ -121,7 +121,7 @@ ul .nav-item a {
 }
 .main__index .presentacion {
   position: absolute;
-  top: 200px;
+  margin-top: 150px; /*veeeeeeeeeeeeeeeeer acaaaaaaaaaa*/
   margin-left: 20px;
   height: auto;
   display: flex;
@@ -576,8 +576,7 @@ footer a:hover, footer li:hover {
     height: auto;
     background-color: rgba(17, 43, 60, 0.7411764706);
     border-radius: 10px;
-    top: 90px;
-    margin-top: 330px;
+    margin-top: 30px !important;
     align-items: center;
     padding: 10px;
   }
@@ -625,7 +624,7 @@ footer a:hover, footer li:hover {
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .header__logo {
     width: 50%;
   }
@@ -639,7 +638,8 @@ footer a:hover, footer li:hover {
     top: 90px;
     align-items: center;
     text-align: center;
-    margin-top: 280px;
+    margin-top: 10px !important;
+    margin-bottom: 5px;
   }
   .presentacion h1 {
     font-size: 3rem;
@@ -674,6 +674,26 @@ footer a:hover, footer li:hover {
     height: 15rem;
     margin-top: 15px;
     border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .presentacion {
+    width: 15em !important;
+    margin-left: 3em !important;
+  }
+  .presentacion h1 {
+    font-size: 3em !important;
+  }
+  .presentacion p {
+    font-size: 1em !important;
+  }
+  .foto__contacto {
+    height: 190px !important;
+  }
+  .foto__contacto h1 {
+    background-color: rgba(17, 43, 60, 0.6745098039) !important;
+    font-size: 3em;
+    margin-top: 15px;
   }
 }
 

@@ -96,8 +96,6 @@
 
     form{
         display:flex;
-
-        
     }
 
     .form{
@@ -121,8 +119,7 @@
         height: auto;
         background-color: #112b3cbd;
         border-radius: 10px;
-        top:90px;
-        margin-top: 330px;
+        margin-top: 30px !important;
         align-items: center;
         padding: 10px;
 
@@ -177,7 +174,7 @@
     }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:500px){
     .header__logo{
         width: 50%;
     }
@@ -191,7 +188,8 @@
         top:90px;
         align-items: center;
         text-align: center;
-        margin-top: 280px;
+        margin-top: 10px !important;
+        margin-bottom: 5px;
 
         h1{
             font-size: 3rem;
@@ -234,5 +232,29 @@
         height: 15rem;
         margin-top: 15px;
         border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px){
+    .presentacion{
+        width:15em !important;
+        margin-left: 3em !important;
+
+        h1{
+            font-size: 3em !important;
+        }
+        p{
+            font-size: 1em !important;
+            
+        }
+    }
+
+    .foto__contacto{
+        height:190px !important;
+        h1{
+            background-color: #112b3cac !important;
+            font-size: 3em;
+            margin-top: 15px;
+        }
     }
 }
